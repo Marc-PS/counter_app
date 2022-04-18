@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class CounterScreen extends StatefulWidget {
   
-  const HomeScreen({Key? key}) : super(key: key);
+  const CounterScreen({Key? key}) : super(key: key);
 
+  @override
+  State<CounterScreen> createState() => _CounterScreenState();
+}
 
+class _CounterScreenState extends State<CounterScreen> {
   @override
   Widget build(BuildContext context) {
 
@@ -13,7 +17,7 @@ class HomeScreen extends StatelessWidget {
 
     return  Scaffold(
       appBar: AppBar(
-        title: const Text('HomeScreen'),
+        title: const Text('CounterScreen'),
         centerTitle: true,
         elevation: 0.5,
       ),
@@ -34,5 +38,4 @@ class HomeScreen extends StatelessWidget {
       ),
     );
   }
-
 }
